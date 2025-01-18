@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main(){
+    float bill,net,total;
+    cout<<"Enter the Value :- ";
+    cin>>bill;
+    if(bill<=300){
+        cout<<"Free."<<endl;
+    }
+    else if (bill>301 && bill<=500){
+        net=bill-300;
+        total=net*5;
+        cout<<"Total bill: "<<total<<endl;
+    }
+    else if (bill>=501 && bill<=700){
+        net=bill-500;
+        total=1000+net*10;
+        cout<<"Total bill: "<<total<<endl;
+    }
+    else if (bill>700){
+        net=bill-700;
+        total=3000+net*20;
+        cout<<"Total bill: "<<total<<endl;
+    }
+    else{
+        cout<<"Error"<<endl;
+    }
+return 0;
+}
