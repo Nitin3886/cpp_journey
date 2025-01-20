@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"Enter the number A: ";
+    cin>>a;
+    cout<<"Enter the number B: ";
+    cin>>b;
+    switch((a<b)-(a>b)){
+    case 1:
+        cout<<"B is greater"<<endl;
+        break;
+    case -1:
+        cout<<"A is greater"<<endl;
+        break;
+    default:
+        cout<<"Both are equal"<<endl;
+        break;
+    }
+    return 0;
+}
+/*
+int main(){
+    int a,b;
+    cout<<"Enter the number A: ";
+    cin>>a;
+    cout<<"Enter the number B: ";
+    cin>>b;
+    switch(a<b){
+    case true:
+        cout<<"B is greater"<<endl;
+        break;
+    case false:
+        cout<<"A is greater"<<endl;
+        break;
+    }
+    return 0;
+
+}*/
