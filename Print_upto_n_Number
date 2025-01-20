@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"Enter the Value of a: ";
+    cin>>a;
+    int i=1;
+    //cout<<"Output"<<endl;
+    for( ; ; )
+    {
+        if(i>a)
+            break;
+        cout<<i<<endl;
+        i++;
+    }
+    return 0;
+}
